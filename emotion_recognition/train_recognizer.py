@@ -50,7 +50,7 @@ else:
 
     # update the learning rate
     print("[INFO] old learning rate: {}".format(K.get_value(model.optimizer.lr)))
-    K.set_value(model.optimizer.lr, 1e-2)
+    K.set_value(model.optimizer.lr, 1e-6)
     print("[INFO] new learning rate: {}".format(K.get_value(model.optimizer.lr)))
 
 # construct the set of callbacks
